@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import { useMockData } from '../../context/MockDataContext';
 import { StatusBadge } from '../../components/StatusBadge';
@@ -8,7 +8,6 @@ import { ArrowLeft, Send, CheckCircle } from 'lucide-react';
 
 const ComplaintDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const { complaints, categories, users, updateComplaintStatus, addComment, currentUser } = useMockData();
   
   const formattedId = `#${id}`;

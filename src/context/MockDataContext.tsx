@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import type { User, Complaint, ComplaintCategory, Priority, ComplaintStatus } from '../types';
+import type { User, Complaint, ComplaintCategory, ComplaintStatus } from '../types';
 import { demoUsers, demoCategories, demoComplaints } from '../demoData';
 
 interface MockDataContextType {
